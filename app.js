@@ -32,10 +32,10 @@ app.post("/", function (req, res) {
 
   const jsonData = JSON.stringify(data);
 
-  const url = "https://us5.api.mailchimp.com/3.0/lists/40517217f4";
+  const url = "https://us5.api.mailchimp.com/3.0/lists/-ID-";
   const options = {
     method: "POST",
-    auth: "xelyfer:3b70cb0121ba288557babe20e1cda6be-us5",
+    auth: "xelyfer:-APIKEY-",
   };
   const request = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
