@@ -3,7 +3,7 @@ const https = require("https");
 const request = require("request");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000; // Do process.evn.PORT first or you will be in pain
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
